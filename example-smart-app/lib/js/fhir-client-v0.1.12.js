@@ -17166,6 +17166,7 @@ BBClient.ready = function(input, callback, errback){
 
   var args = readyArgs.apply(this, arguments);
 
+debugger;
   // decide between token flow (implicit grant) and code flow (authorization code grant)
   var isCode = urlParam('code') || (args.input && args.input.code);
 
